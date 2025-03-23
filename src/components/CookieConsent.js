@@ -6,7 +6,6 @@ const CookieConsent = () => {
 
   const handleAccept = () => {
     setIsVisible(false);
-    // Add logic to save the user's consent (e.g., in localStorage)
   };
 
   if (!isVisible) return null;

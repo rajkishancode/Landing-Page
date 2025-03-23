@@ -1,6 +1,8 @@
+/* Existing styles */
 body {
   background-color: #f8f4f0;
   color: #000;
+  font-family: 'Lato', sans-serif;
 }
 
 h1.display-4 {
@@ -38,4 +40,120 @@ p.lead {
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: #1264a3;
+}
+
+.banner {
+  background-color: #1264a3;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 1rem;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+}
+
+.banner .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner .btn-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+
+  .banner .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner .btn-link {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.logos-section {
+  background-color: #f8f4f0;
+  padding: 3rem 0;
+}
+
+.logos-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .logos-section {
+    padding: 2rem 0;
+  }
+
+  .logos-section .container {
+    gap: 1.5rem;
+  }
+
+  .logos-section img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+/* Updated styles for the Footer */
+footer {
+  background-color: #f8f4f0;
+  padding: 3rem 0;
+}
+
+footer h2 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #000;
+}
+
+footer p {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+footer .btn-outline-dark {
+  border-color: #000;
+  color: #000;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+}
+
+footer .btn-outline-dark:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Responsive adjustments for the footer */
+@media (max-width: 768px) {
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer img {
+    width: 200px !important;
+    height: 150px !important;
+    margin-bottom: 1.5rem;
+  }
+
+  footer .col-md-8 {
+    text-align: center !important;
+  }
 }
